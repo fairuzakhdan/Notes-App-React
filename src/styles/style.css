@@ -10,7 +10,7 @@ body {
   color: white;
 }
 
-input, textarea {
+input, textarea, .btn-submit {
   padding: 12px;
   margin: 12px 0;
   font-family: 'Inter', sans-serif;
@@ -25,7 +25,26 @@ input::placeholder, textarea::placeholder {
   font-weight: bold;
 }
 
-.note-app__header {
+
+.form-notes {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-notes input, .form-notes textarea, button {
+  width: 30%;
+}
+
+.btn-submit {
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* .form-notes textarea {
+  padding: 18px;
+} */
+
+/* .note-app__header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,7 +182,7 @@ input::placeholder, textarea::placeholder {
 
 .note-item__delete-button:hover {
   color: #b00020;
-}
+} */
 
 @media only screen and (min-width: 500px) {
   .notes-list {
