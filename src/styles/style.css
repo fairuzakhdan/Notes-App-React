@@ -13,6 +13,7 @@ body {
 .notes-app {
   display: flex;
   flex-direction: column;
+  row-gap: 20px
 }
 
 input, textarea, .btn-submit {
@@ -48,6 +49,52 @@ input::placeholder, textarea::placeholder {
 
 .note-item {
   display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.note-btn button {
+  width: 50%;
+  margin: 0;
+  padding: 10px;
+  outline: 1px solid white;
+  border-radius: 3px;
+  font-size: .9em;
+  font-weight: bold;
+  background-color:#202124; 
+  cursor: pointer;
+}
+
+
+
+.btn-delete {
+  color: tomato;
+}
+
+.btn-delete:hover {
+  background-color:rgb(120, 120, 120);
+}
+
+.btn-arsip {
+  color: yellow;
+}
+
+.btn-arsip:hover {
+  background-color: rgb(120, 120, 120);
+}
+
+.note-body {
+  padding: 15px
 }
 
 /* .form-notes textarea {

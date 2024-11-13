@@ -34,7 +34,7 @@ class FormNotes extends React.Component {
         <form action="" className="form-notes">
             <InputNotes type="text" name="title" placeholder="Ini adalah judul ...." value={this.state.title} onChange={this.onTitleHandler}/>
            <TextArea name="body" placeholder="Tuliskan Catatanmu di sini ..." rows="10" value={this.state.body} onChange={this.onBodyHandler}/>
-           <Button fill="Buat"/>
+           <Button fill="Buat" clasName='btn-submit'/>
         </form>
     )
   }
