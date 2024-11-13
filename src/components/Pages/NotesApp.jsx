@@ -1,5 +1,6 @@
 import React from "react";
 import FormNotes from "../Fragments/FormNotes";
+import NotesList from "../Fragments/NotesList";
 
 class NotesApp extends React.Component {
     constructor(props) {
@@ -9,6 +10,7 @@ class NotesApp extends React.Component {
         return (
             <div className="notes-app">
             <FormNotes />
+            <NotesList />
         </div>
         )
     }
