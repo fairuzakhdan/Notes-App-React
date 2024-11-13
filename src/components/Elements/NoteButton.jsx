@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./Button";
 const NoteButton = ({id, onDelete, onArsip}) => {
   return (
-    <div>
+    <div className="note-btn">
       <Button fill="Delete" onClick={() => onDelete(id)}/>
       <Button fill="Arsipkan" onClick={() => onArsip(id)}/>
     </div>

@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const NoteItem = ({ notes, onDelete, onArsip }) => {
   return (
-    <div>
+    <div className="note-item">
       {notes.map((item) => (
         <ListItem key={item.id} {...item} onDelete={onDelete} onArsip={onArsip}/>
       ))}
