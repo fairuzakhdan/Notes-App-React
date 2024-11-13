@@ -1,12 +1,13 @@
 import React from "react";
+import NoteBody from "./NoteBody";
+import NoteButton from "./NoteButton";
 
-const ListItem = ({ title, body, createdAt }) => {
+const ListItem = ({ title, body, createdAt,id, onDelete, onArsip }) => {
   return (
-    <div>
-      <h1>{title}</h1>
-      <small>{createdAt}</small>
-      <p>{body}</p>
-    </div>
+   <div>
+    <NoteBody title={title} createdAt={createdAt} body={body}/>
+    <NoteButton onDelete={onDelete} onArsip={onArsip} id={id}/>
+   </div>
   );
 };
 

@@ -10,10 +10,11 @@ class NotesList extends React.Component {
             notes: getInitialData()
         }
     }
+
     render() {
        return (
         <div>
-            <NoteItem notes={notes}/>
+            <NoteItem notes={this.state.notes} />
         </div>
     )
     }

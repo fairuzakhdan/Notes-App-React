@@ -1,16 +1,13 @@
 import React from "react";
 import ListItem from "./ListItem";
+import Button from "./Button";
 
-const NoteItem = ({ notes }) => {
+const NoteItem = ({ notes, onDelete, onArsip }) => {
   return (
     <div>
-      {notes.map((item) => {
-        <ListItem key={item.id} {...item} />;
-      })}
-      <div>
-        <Button fill="Delete" onClick={() => onDelete(id)} />
-        <Button fill="Arsipkan" onClick={() => onArsip(id)} />
-      </div>
+      {notes.map((item) => (
+        <ListItem key={item.id} {...item} onDelete={onDelete} onArsip={onArsip}/>
+      ))}
     </div>
   );
 };
