@@ -116,11 +116,6 @@ input::placeholder, textarea::placeholder {
   border-bottom: 1px solid #aaa;
 }
 
-.note-app__header h1 {
-  margin: 8px 0;
-  flex: 1;
-  color: white;
-}
 
 
 .note-app__body {
