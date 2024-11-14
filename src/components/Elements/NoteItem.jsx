@@ -1,6 +1,5 @@
 import React from "react";
 import ListItem from "./ListItem";
-import Button from "./Button";
 
 const NoteItem = ({ notes, onDelete, onArsip }) => {
   return (
