@@ -74,17 +74,7 @@ class NotesApp extends React.Component {
         ) : (
           <h1>Tidak Ada Catatan</h1>
         )}
-        <h2>Arsip</h2>
-        {this.state.notes.length > 0 ? (
-          <NoteItem
-            notes={filteredNotes}
-            onDelete={this.ondDeleteHandler}
-            onArsip={this.onArsipHandler}
-            status={true}
-          />
-        ) : (
-          <h1>Tidak Ada Catatan</h1>
-        )}
+        
       </div>
     );
   }
