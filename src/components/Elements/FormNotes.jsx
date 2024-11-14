@@ -31,7 +31,7 @@ class FormNotes extends React.Component {
   }
   render() {
     return (
-      <form action="" className="form-notes">
+      <form action="" className="form-notes" onSubmit={this.onAddNotes}>
         <InputNotes
           type="text"
           name="title"
