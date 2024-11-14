@@ -12,6 +12,7 @@ class FormNotes extends React.Component {
     };
     this.onTitleHandler = this.onTitleHandler.bind(this);
     this.onBodyHandler = this.onBodyHandler.bind(this);
+    this.onSubmitHandler = this.onSubmitHandler.bind(this);
   }
 
   onTitleHandler(event) {
@@ -29,9 +30,14 @@ class FormNotes extends React.Component {
       };
     });
   }
+
+  onSubmitHandler(event) {
+    event.preventDefault();
+    this.props.addNotes(this.state)
+  }
   render() {
     return (
-      <form action="" className="form-notes" onSubmit={this.onAddNotes}>
+      <form className="form-notes" onSubmit={this.onSubmitHandler}>
         <InputNotes
           type="text"
           name="title"

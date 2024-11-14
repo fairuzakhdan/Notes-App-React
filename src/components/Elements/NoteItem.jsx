@@ -5,7 +5,7 @@ const NoteItem = ({ notes, onDelete, onArsip }) => {
   return (
     <div className="note-item">
       {notes.map((item) => (
-        <ListItem key={item.id} {...item} onDelete={onDelete} onArsip={onArsip}/>
+        <ListItem key={item.id} {...item} onDelete={onDelete} onArsip={onArsip} id={item.id}/>
       ))}
     </div>
   );

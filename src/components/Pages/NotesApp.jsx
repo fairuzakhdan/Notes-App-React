@@ -12,6 +12,7 @@ class NotesApp extends React.Component {
       search: "",
     };
     this.onSeacrhNotes = this.onSeacrhNotes.bind(this);
+    this.onAddNotesHandler = this.onAddNotesHandler.bind(this)
   }
 
   onSeacrhNotes(event) {
@@ -21,6 +22,22 @@ class NotesApp extends React.Component {
       };
     });
   }
+  onAddNotesHandler({title, body}) {
+    this.setState((prevState) => {
+      return {
+        notes: [
+          ...prevState.notes,
+          {
+            id: Date.now(),
+            title,
+            body,
+            createdAt:  new Date().toISOString(),
+            archived: false,
+          }
+        ]
+      }
+    })
+  }
   render() {
     const filteredNotes = this.state.notes.filter((note) =>
       note.title.toLowerCase().includes(this.state.search.toLowerCase())
@@ -29,8 +46,8 @@ class NotesApp extends React.Component {
     return (
       <div className="notes-app">
         <Navbar value={this.state.search} onChange={this.onSeacrhNotes} />
-        <FormNotes />
-        <NoteItem notes={filteredNotes} />
+        <FormNotes addNotes={this.onAddNotesHandler}/>
+        <NoteItem notes={filteredNotes} onDelete={this.ondDeleteHandler}/>
       </div>
     );
   }
