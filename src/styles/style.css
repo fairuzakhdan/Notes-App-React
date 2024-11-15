@@ -117,13 +117,6 @@ input::placeholder, textarea::placeholder {
 }
 
 
-
-
-.note-app__body h2 {
-  font-weight: normal;
-  margin: 16px 0;
-}
-
 .note-input {
   margin: 0 auto;
   max-width: 500px;
