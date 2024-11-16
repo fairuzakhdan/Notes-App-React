@@ -121,10 +121,6 @@ input::placeholder, textarea::placeholder {
 
 
 
-.note-input__title {
-  font-weight: bold;
-}
-
 .note-input__title__char-limit {
   font-size: 14px;
   text-align: right;
