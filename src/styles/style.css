@@ -119,10 +119,7 @@ input::placeholder, textarea::placeholder {
 
 
 
-.note-input input, .note-input textarea {
-  display: block;
-  width: 100%;
-}
+
 
 .note-input__title {
   font-weight: bold;
