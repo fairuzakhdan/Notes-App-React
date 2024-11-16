@@ -33,8 +33,20 @@ class FormNotes extends React.Component {
 
   onSubmitHandler(event) {
     event.preventDefault();
-    this.props.addNotes(this.state)
+    if(this.state.title.length > 50) {
+      alert('Judul tidak boleh lebih dari 50 karakter')
+    } else {
+      this.props.addNotes(this.state)
+      this.setState({
+        title: '',
+        body: '', 
+      });
+    }
   }
+
+  // onTitleKarakter(event) {
+
+  // }
   render() {
     return (
       <form className="form-notes" onSubmit={this.onSubmitHandler}>
@@ -52,7 +64,8 @@ class FormNotes extends React.Component {
           value={this.state.body}
           onChange={this.onBodyHandler}
         />
-        <Button fill="Buat" clasName="btn-submit" />
+        <Button fill="Buat" clasName="btn-submit"/>
+       
       </form>
     );
   }

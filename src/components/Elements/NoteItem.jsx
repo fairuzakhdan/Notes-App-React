@@ -6,7 +6,6 @@ const NoteItem = ({ notes, onDelete, onArsip, status }) => {
   return (
     <div className="note-item">
       {filtered.map((item) => (
-      
         item.archived === status && (
           <ListItem key={item.id} {...item} onDelete={onDelete} onArsip={onArsip} id={item.id}/>
         )
