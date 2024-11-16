@@ -49,7 +49,7 @@ class NotesApp extends React.Component {
     this.setState((prevState) => {
       return {
         prevState: prevState.notes.map((note) =>
-          note.id === id ? (note.archived = !note.archived) : note
+          note.id === id ? (note.archived = true) : note
         ),
       };
     });
@@ -76,16 +76,17 @@ class NotesApp extends React.Component {
           <p>Tidak Ada Catatan</p>
         )}
         <h2 className="arsip-title">Arsip</h2>
-       {this.state.notes.filter((note) => note.archived === true).length > 0 ? (
+        {this.state.notes.filter((note) => note.archived === true).length >
+        0 ? (
           <NoteItem
             notes={filteredNotes}
             onDelete={this.ondDeleteHandler}
             onArsip={this.onArsipHandler}
             status={true}
           />
-        ) :  <p className="no-arsip">Tidak Ada Catatan</p>
-        }
-        
+        ) : (
+          <p className="no-arsip">Tidak Ada Catatan</p>
+        )}
       </div>
     );
   }
