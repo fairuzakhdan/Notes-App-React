@@ -2,6 +2,7 @@ import React from "react";
 import InputNotes from "./input";
 import TextArea from "./TextArea";
 import Button from "./Button";
+import FormHeader from "./FormHeader";
 
 class FormNotes extends React.Component {
   constructor(props) {
@@ -45,9 +46,10 @@ class FormNotes extends React.Component {
   }
 
   render() {
+    const char = 50 - this.state.title.length
     return (
       <form className="form-notes" onSubmit={this.onSubmitHandler}>
-        
+        <FormHeader char={char}/>
         <InputNotes
           type="text"
           name="title"
