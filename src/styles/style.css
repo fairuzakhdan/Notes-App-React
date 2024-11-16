@@ -59,6 +59,21 @@ input::placeholder, textarea::placeholder {
   width: 35%;
 }
 
+.form-title {
+  align-self: start;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  width:35%;
+}
+
+.form-karakter {
+  align-self: end;
+  color: gray;
+}
+
 .btn-submit {
   padding: 10px;
   cursor: pointer;

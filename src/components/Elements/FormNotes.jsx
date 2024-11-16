@@ -50,6 +50,10 @@ class FormNotes extends React.Component {
   render() {
     return (
       <form className="form-notes" onSubmit={this.onSubmitHandler}>
+        <div className="form-header">
+        <h2 className="form-title">Buat Catatan</h2>
+        <small className="form-karakter">Sisa Karakter: 50</small>
+        </div>
         <InputNotes
           type="text"
           name="title"
