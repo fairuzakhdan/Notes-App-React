@@ -117,11 +117,7 @@ input::placeholder, textarea::placeholder {
 }
 
 
-.note-input {
-  margin: 0 auto;
-  max-width: 500px;
-  margin-bottom: 48px;
-}
+
 
 .note-input input, .note-input textarea {
   display: block;
