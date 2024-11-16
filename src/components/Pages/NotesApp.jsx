@@ -64,6 +64,7 @@ class NotesApp extends React.Component {
       <div className="notes-app">
         <Navbar value={this.state.search} onChange={this.onSeacrhNotes} />
         <FormNotes addNotes={this.onAddNotesHandler} />
+        <h1>Catatan Aktif</h1>
         {this.state.notes.length > 0 ? (
           <NoteItem
             notes={filteredNotes}
@@ -75,14 +76,14 @@ class NotesApp extends React.Component {
           <h1>Tidak Ada Catatan</h1>
         )}
         <h2>Arsip</h2>
-       {this.state.notes.length > 0 && (
+       {this.state.notes.length > 0 ? (
           <NoteItem
             notes={filteredNotes}
             onDelete={this.ondDeleteHandler}
             onArsip={this.onArsipHandler}
             status={true}
           />
-        ) 
+        ) :  <h2>Tidak Ada Catatan</h2>
         }
         
       </div>
