@@ -7,9 +7,9 @@ const NoteItem = ({ notes, onDelete, onArsip, status }) => {
     <div className="note-item">
      
       {filtered.map((item) => (
-        item.archived === status && (
+        item.archived === status ? (
           <ListItem key={item.id} {...item} onDelete={onDelete} onArsip={onArsip} id={item.id}/>
-        )
+        ) : <h1>Tidak Ada Catatan</h1>
       ))}
     </div>
   );
