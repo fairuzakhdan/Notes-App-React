@@ -48,7 +48,7 @@ class NotesApp extends React.Component {
   onArsipHandler(id) {
     this.setState((prevState) => {
       return {
-        prevState: prevState.map((note) =>
+        prevState: prevState.notes.map((note) =>
           note.id === id ? (note.archived = !note.archived) : note
         ),
       };
@@ -74,6 +74,16 @@ class NotesApp extends React.Component {
         ) : (
           <h1>Tidak Ada Catatan</h1>
         )}
+        <h2>Arsip</h2>
+       {this.state.notes.length > 0 && (
+          <NoteItem
+            notes={filteredNotes}
+            onDelete={this.ondDeleteHandler}
+            onArsip={this.onArsipHandler}
+            status={true}
+          />
+        ) 
+        }
         
       </div>
     );
