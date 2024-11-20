@@ -134,7 +134,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .note-input__title__char-limit {
-  text-align: right;
+
 }
 
 .note-input__body {
