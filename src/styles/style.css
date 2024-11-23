@@ -137,7 +137,7 @@ input::placeholder, textarea::placeholder {
 
 
 .note-input button {
-  width: 100%;
+
   padding: 8px;
   background-color: transparent;
   font-family: 'Inter', sans-serif;
