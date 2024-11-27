@@ -171,7 +171,6 @@ input::placeholder, textarea::placeholder {
 }
 
 .note-item__title {
-  text-overflow: ellipsis;
 }
 
 .note-item__date {
