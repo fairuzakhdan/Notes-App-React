@@ -170,8 +170,6 @@ input::placeholder, textarea::placeholder {
   flex: 1;
 }
 
-.note-item__title {
-}
 
 .note-item__date {
   font-size: 12px;
