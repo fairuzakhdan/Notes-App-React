@@ -149,7 +149,6 @@ input::placeholder, textarea::placeholder {
   gap: 16px;
   margin-bottom: 48px;
 }
-
 .note-item__date {
   font-size: 12px;
   margin-bottom: 8px;
