@@ -147,7 +147,7 @@ input::placeholder, textarea::placeholder {
   grid-template-columns: 1fr;
   grid-template-rows: minmax(min-content, max-content);
   gap: 16px;
-  margin-b
+
 }
 .note-item__date {
   font-size: 12px;
