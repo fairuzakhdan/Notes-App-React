@@ -145,7 +145,6 @@ input::placeholder, textarea::placeholder {
 .notes-list {
   display: grid;
   grid-template-columns: 1fr;
- 
 }
 .note-item__date {
   font-size: 12px;
