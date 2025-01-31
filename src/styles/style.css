@@ -141,7 +141,6 @@ input::placeholder, textarea::placeholder {
   font-family: 'Inter', sans-serif;
 
 
-
 .notes-list {
   display: grid;
   grid-template-columns: 1fr;
