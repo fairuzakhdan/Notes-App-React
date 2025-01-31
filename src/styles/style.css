@@ -139,7 +139,6 @@ input::placeholder, textarea::placeholder {
 .note-input button {
   background-color: transparent;
   font-family: 'Inter', sans-serif;
-
 .notes-list {
   display: grid;
   grid-template-columns: 1fr;
