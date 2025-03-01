@@ -134,7 +134,7 @@ input::placeholder, textarea::placeholder {
 }
 .note-input button {
   background-color: transparent;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif
 .note-item__date {
   font-size: 12px;
   margin-bottom: 8px;
