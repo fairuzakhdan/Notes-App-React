@@ -135,7 +135,7 @@ input::placeholder, textarea::placeholder {
 .note-item__delete-button,.note-item__archive-button {
   background-color: transparent;
   border-top: 1px solid #aaa;
-  padding
+  padd
   font-family: 'Inter', sans-serif;
   font-weight: bold;
   cursor: pointer;
