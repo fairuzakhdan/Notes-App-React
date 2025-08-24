@@ -108,7 +108,6 @@ input::placeholder, textarea::placeholder {
 }
 
 
-
 .btn-delete {
   color: tomato;
 }
@@ -130,7 +129,7 @@ input::placeholder, textarea::placeholder {
 }
 
 
-/* .note-
+/* .note
 
 .note-item__delete-button,.note-item__archive-button {
   background-color: transparent;
